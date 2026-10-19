@@ -23,7 +23,7 @@ Answer 5 questions a day on crypto and security basics. Pass the quiz to claim a
 ## Status
 
 - [x] Fase 1 — Persiapan / Setup
-- [ ] Fase 2 — Smart contract badge
+- [x] Fase 2 — Smart contract badge ([Sepolia](docs/deployments.md))
 - [ ] Fase 3 — Mini app
 - [ ] Fase 4 — Mesin konten AI / AI content engine
 - [ ] Fase 5 — Mainnet & peluncuran / Launch
