@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-20",
+  "status": "reviewed",
+  "questions": [
+    {
+      "question": {
+        "id": "Apa itu 'gas fee'?",
+        "en": "What is a 'gas fee'?"
+      },
+      "options": {
+        "id": [
+          "Biaya untuk memproses transaksi di blockchain",
+          "Pajak kripto dari pemerintah",
+          "Biaya bulanan wallet",
+          "Bunga pinjaman kripto"
+        ],
+        "en": [
+          "A fee to process a transaction on the blockchain",
+          "A government crypto tax",
+          "A monthly wallet fee",
+          "Interest on a crypto loan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "id": "Gas fee dibayarkan kepada jaringan agar transaksi diproses. Besarnya tergantung kesibukan jaringan dan kerumitan transaksi.",
+        "en": "Gas fees are paid to the network to process transactions. The amount depends on network demand and transaction complexity."
+      }
+    },
+    {
+      "question": {
+        "id": "Base adalah jaringan jenis apa?",
+        "en": "What kind of network is Base?"
+      },
+      "options": {
+        "id": [
+          "Bank digital",
+          "Layer 2 (L2) di atas Ethereum",
+          "Exchange kripto",
+          "Koin meme"
+        ],
+        "en": [
+          "A digital bank",
+          "A Layer 2 (L2) built on Ethereum",
+          "A crypto exchange",
+          "A meme coin"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "id": "Base adalah Layer 2 yang dibangun di atas Ethereum. Transaksinya jauh lebih murah, dan keamanannya bertumpu pada Ethereum.",
+        "en": "Base is a Layer 2 built on Ethereum. Transactions are much cheaper, and its security relies on Ethereum."
+      }
+    },
+    {
+      "question": {
+        "id": "Kenapa biaya transaksi di Layer 2 biasanya lebih murah?",
+        "en": "Why are Layer 2 transactions usually cheaper?"
+      },
+      "options": {
+        "id": [
+          "Karena disubsidi pemerintah",
+          "Karena banyak transaksi digabung lalu dicatat bersama ke Ethereum",
+          "Karena tidak memakai blockchain",
+          "Karena transaksinya tidak tercatat"
+        ],
+        "en": [
+          "Because governments subsidize them",
+          "Because many transactions are bundled and recorded together on Ethereum",
+          "Because they don't use a blockchain",
+          "Because transactions aren't recorded"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "id": "L2 menggabungkan (rollup) banyak transaksi, sehingga biaya pencatatan ke Ethereum dibagi ke banyak pengguna.",
+        "en": "L2s bundle (roll up) many transactions, so the cost of posting to Ethereum is shared by many users."
+      }
+    },
+    {
+      "question": {
+        "id": "Anda mengirim kripto ke alamat yang salah. Apa yang terjadi?",
+        "en": "You sent crypto to the wrong address. What happens?"
+      },
+      "options": {
+        "id": [
+          "Bisa dibatalkan lewat customer service blockchain",
+          "Uang otomatis kembali dalam 24 jam",
+          "Umumnya tidak bisa dibatalkan",
+          "Bank akan mengembalikannya"
+        ],
+        "en": [
+          "It can be reversed by blockchain customer service",
+          "The money returns automatically within 24 hours",
+          "It generally cannot be reversed",
+          "The bank will refund it"
+        ]
+      },
+      "answer": 2,
+      "explanation": {
+        "id": "Transaksi blockchain bersifat final. Selalu cek ulang alamat tujuan, dan coba kirim jumlah kecil dulu.",
+        "en": "Blockchain transactions are final. Always double-check the address and try a small test amount first."
+      }
+    },
+    {
+      "question": {
+        "id": "Apa itu 'testnet' seperti Base Sepolia?",
+        "en": "What is a 'testnet' like Base Sepolia?"
+      },
+      "options": {
+        "id": [
+          "Jaringan latihan dengan koin tanpa nilai uang",
+          "Jaringan khusus orang kaya",
+          "Versi berbayar dari Base",
+          "Aplikasi wallet"
+        ],
+        "en": [
+          "A practice network with coins that have no monetary value",
+          "A network for wealthy users",
+          "A paid version of Base",
+          "A wallet app"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "id": "Testnet dipakai untuk belajar dan menguji aplikasi tanpa risiko. Koinnya gratis dari faucet dan tidak bisa dijual.",
+        "en": "Testnets are for learning and testing apps without risk. Their coins are free from faucets and can't be sold."
+      }
+    }
+  ]
+}

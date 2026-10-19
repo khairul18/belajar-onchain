@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-19",
+  "status": "reviewed",
+  "questions": [
+    {
+      "question": {
+        "id": "Apa itu seed phrase?",
+        "en": "What is a seed phrase?"
+      },
+      "options": {
+        "id": [
+          "Password untuk login ke exchange",
+          "12–24 kata yang bisa memulihkan seluruh isi wallet",
+          "Alamat untuk menerima kripto",
+          "Kode OTP dari SMS"
+        ],
+        "en": [
+          "A password to log in to an exchange",
+          "12–24 words that can restore your whole wallet",
+          "An address for receiving crypto",
+          "An OTP code from SMS"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "id": "Seed phrase adalah kunci utama wallet. Siapa pun yang mengetahuinya bisa mengambil semua aset Anda, jadi jangan pernah dibagikan.",
+        "en": "A seed phrase is the master key to a wallet. Anyone who knows it can take all your assets, so never share it."
+      }
+    },
+    {
+      "question": {
+        "id": "Seseorang mengaku 'admin' dan meminta seed phrase Anda untuk 'verifikasi akun'. Apa yang harus dilakukan?",
+        "en": "Someone claiming to be an 'admin' asks for your seed phrase to 'verify your account'. What should you do?"
+      },
+      "options": {
+        "id": [
+          "Berikan, karena dia admin resmi",
+          "Berikan setengahnya saja",
+          "Tolak. Itu pasti penipuan",
+          "Kirim lewat DM supaya aman"
+        ],
+        "en": [
+          "Give it, they are an official admin",
+          "Give only half of it",
+          "Refuse. It is always a scam",
+          "Send it via DM so it's private"
+        ]
+      },
+      "answer": 2,
+      "explanation": {
+        "id": "Tidak ada admin, exchange, atau tim resmi yang akan meminta seed phrase. Permintaan seperti itu selalu penipuan.",
+        "en": "No admin, exchange or official team will ever ask for your seed phrase. Such requests are always scams."
+      }
+    },
+    {
+      "question": {
+        "id": "Alamat wallet (yang diawali 0x...) boleh dibagikan ke orang lain?",
+        "en": "Can you share your wallet address (starting with 0x...)?"
+      },
+      "options": {
+        "id": [
+          "Boleh, seperti nomor rekening untuk menerima dana",
+          "Tidak boleh sama sekali",
+          "Hanya boleh ke keluarga",
+          "Boleh, asal disertai seed phrase"
+        ],
+        "en": [
+          "Yes, like a bank account number for receiving funds",
+          "Never",
+          "Only with family",
+          "Yes, together with the seed phrase"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "id": "Alamat wallet bersifat publik dan aman dibagikan untuk menerima dana. Yang rahasia adalah seed phrase dan private key.",
+        "en": "A wallet address is public and safe to share for receiving funds. The secrets are the seed phrase and private key."
+      }
+    },
+    {
+      "question": {
+        "id": "Di mana tempat paling aman menyimpan seed phrase?",
+        "en": "Where is the safest place to store a seed phrase?"
+      },
+      "options": {
+        "id": [
+          "Screenshot di galeri HP",
+          "Chat WhatsApp ke diri sendiri",
+          "Ditulis di kertas dan disimpan di tempat aman",
+          "Catatan di Google Docs"
+        ],
+        "en": [
+          "A screenshot in your phone gallery",
+          "A WhatsApp chat to yourself",
+          "Written on paper and stored somewhere safe",
+          "A note in Google Docs"
+        ]
+      },
+      "answer": 2,
+      "explanation": {
+        "id": "Penyimpanan offline seperti kertas tidak bisa dicuri malware atau ikut bocor saat akun cloud dibobol.",
+        "en": "Offline storage like paper can't be stolen by malware or leaked through a hacked cloud account."
+      }
+    },
+    {
+      "question": {
+        "id": "Apa arti 'self-custody' (wallet non-kustodian)?",
+        "en": "What does 'self-custody' (non-custodial wallet) mean?"
+      },
+      "options": {
+        "id": [
+          "Exchange yang menyimpan aset Anda",
+          "Anda sendiri yang memegang kunci dan bertanggung jawab atas aset",
+          "Bank yang menjamin kripto Anda",
+          "Wallet yang tidak bisa dipakai"
+        ],
+        "en": [
+          "An exchange holds your assets",
+          "You hold the keys and are responsible for your assets",
+          "A bank insures your crypto",
+          "A wallet that can't be used"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "id": "Dengan self-custody, tidak ada pihak ketiga yang bisa memulihkan aset jika kunci hilang. Kebebasan datang bersama tanggung jawab.",
+        "en": "With self-custody, no third party can recover your assets if you lose your keys. Freedom comes with responsibility."
+      }
+    }
+  ]
+}

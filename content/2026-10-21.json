@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-21",
+  "status": "reviewed",
+  "questions": [
+    {
+      "question": {
+        "id": "Tanda paling umum dari penipuan investasi kripto adalah…",
+        "en": "The most common sign of a crypto investment scam is…"
+      },
+      "options": {
+        "id": [
+          "Janji keuntungan pasti dan tinggi dalam waktu singkat",
+          "Website memakai bahasa Indonesia",
+          "Proyek punya akun media sosial",
+          "Ada dokumen whitepaper"
+        ],
+        "en": [
+          "Promises of guaranteed high returns in a short time",
+          "The website is in Indonesian",
+          "The project has social media accounts",
+          "It has a whitepaper"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "id": "Tidak ada investasi sah yang menjamin untung tinggi tanpa risiko. Janji seperti itu tanda bahaya utama.",
+        "en": "No legitimate investment guarantees high returns without risk. Such promises are the biggest red flag."
+      }
+    },
+    {
+      "question": {
+        "id": "Anda menerima NFT atau token gratis yang tidak dikenal di wallet. Sebaiknya…",
+        "en": "An unknown free NFT or token appears in your wallet. You should…"
+      },
+      "options": {
+        "id": [
+          "Segera klik link di deskripsinya untuk klaim hadiah",
+          "Abaikan dan jangan berinteraksi dengannya",
+          "Jual secepatnya di situs yang disebutkan",
+          "Kirim ke teman"
+        ],
+        "en": [
+          "Click the link in its description to claim a prize",
+          "Ignore it and don't interact with it",
+          "Sell it quickly on the site it mentions",
+          "Send it to a friend"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "id": "Airdrop tak dikenal sering dipakai untuk memancing Anda ke situs palsu yang menguras wallet.",
+        "en": "Unknown airdrops are often bait to lure you to fake sites that drain your wallet."
+      }
+    },
+    {
+      "question": {
+        "id": "Apa bahayanya menyetujui (approve) izin token tanpa batas ke situs yang tidak dikenal?",
+        "en": "What's the danger of giving unlimited token approval to an unknown site?"
+      },
+      "options": {
+        "id": [
+          "Tidak ada bahaya",
+          "Situs itu bisa memindahkan token Anda kapan saja",
+          "Wallet jadi lebih cepat",
+          "Gas fee jadi gratis"
+        ],
+        "en": [
+          "No danger",
+          "The site could move your tokens at any time",
+          "Your wallet gets faster",
+          "Gas becomes free"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "id": "Approval memberi izin kepada kontrak untuk memindahkan token Anda. Batasi jumlahnya dan cabut izin yang tidak dipakai.",
+        "en": "An approval lets a contract move your tokens. Limit amounts and revoke approvals you don't use."
+      }
+    },
+    {
+      "question": {
+        "id": "Cara aman membuka situs aplikasi kripto adalah…",
+        "en": "A safe way to open a crypto app's website is…"
+      },
+      "options": {
+        "id": [
+          "Klik link dari iklan pencarian teratas",
+          "Klik link dari DM orang asing",
+          "Ketik alamat resmi sendiri atau pakai bookmark",
+          "Klik link dari komentar media sosial"
+        ],
+        "en": [
+          "Click the top sponsored search result",
+          "Click a link from a stranger's DM",
+          "Type the official address yourself or use a bookmark",
+          "Click a link from social media comments"
+        ]
+      },
+      "answer": 2,
+      "explanation": {
+        "id": "Penipu sering memasang iklan dan link palsu yang mirip aslinya. Bookmark mengurangi risiko salah situs.",
+        "en": "Scammers often run ads and fake links that look real. Bookmarks reduce the risk of landing on the wrong site."
+      }
+    },
+    {
+      "question": {
+        "id": "Di Indonesia, lembaga yang mengawasi perdagangan aset kripto saat ini adalah…",
+        "en": "In Indonesia, the authority currently supervising crypto asset trading is…"
+      },
+      "options": {
+        "id": [
+          "OJK (Otoritas Jasa Keuangan)",
+          "Kementerian Agama",
+          "PLN",
+          "BMKG"
+        ],
+        "en": [
+          "OJK (Financial Services Authority)",
+          "Ministry of Religious Affairs",
+          "PLN (state electricity company)",
+          "BMKG (meteorology agency)"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "id": "Sejak Januari 2025, pengawasan aset kripto berpindah dari Bappebti ke OJK. Gunakan hanya exchange yang terdaftar dan diawasi.",
+        "en": "Since January 2025, crypto supervision moved from Bappebti to OJK. Only use registered, supervised exchanges."
+      }
+    }
+  ]
+}
