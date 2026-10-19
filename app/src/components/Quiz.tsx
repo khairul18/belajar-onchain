@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { useAccount } from "wagmi";
 import { useLang, type Lang } from "@/lib/i18n";
@@ -31,7 +32,9 @@ export function Quiz() {
   const [choices, setChoices] = useState<number[]>([]);
   const [feedback, setFeedback] = useState<Feedback[]>([]);
   const [finished, setFinished] = useState(false);
-  const [result, setResult] = useState<Result | null>(null);
+  // Hasil penilaian terikat ke alamat; ganti akun di wallet → dinilai ulang untuk akun itu.
+  const [rawResult, setResult] = useState<(Result & { for: string }) | null>(null);
+  const result = rawResult && rawResult.for === address ? rawResult : null;
   const [rawStatus, setStatus] = useState<Status | null>(null);
   const status = address ? rawStatus : null;
   const [error, setError] = useState<string | null>(null);
@@ -64,7 +67,7 @@ export function Quiz() {
       .then(async (r) => {
         if (r.status === 429) throw new Error(t.rateLimited);
         if (!r.ok) throw new Error(t.claimError);
-        setResult(await r.json());
+        setResult({ ...(await r.json()), for: address });
       })
       .catch((e: Error) => setError(e.message));
   }, [finished, address, result, choices, t]);
@@ -79,6 +82,7 @@ export function Quiz() {
         <p className="font-semibold">{t.alreadyToday}</p>
         <StreakPill streak={status.streak} />
         <Claims claims={status.claims} onClaimed={loadStatus} />
+        {status.claims.length === 0 && <AllOwned />}
       </Card>
     );
   }
@@ -104,6 +108,7 @@ export function Quiz() {
         )}
         {result && <StreakPill streak={result.streak} />}
         {result && <Claims claims={result.claims} onClaimed={loadStatus} />}
+        {result?.passed && result.claims.length === 0 && <AllOwned />}
         {error && <p className="text-sm text-red-600">{error}</p>}
       </Card>
     );
@@ -188,6 +193,18 @@ function Claims({ claims, onClaimed }: { claims: Claim[]; onClaimed: () => void 
         <ClaimButton key={c.tokenId} claim={c} onClaimed={onClaimed} />
       ))}
     </div>
+  );
+}
+
+function AllOwned() {
+  const { t } = useLang();
+  return (
+    <p className="text-sm text-muted">
+      {t.allOwned}{" "}
+      <Link href="/profil" className="font-medium text-brand underline">
+        {t.seeProfile}
+      </Link>
+    </p>
   );
 }
 
