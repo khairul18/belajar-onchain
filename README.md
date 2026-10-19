@@ -15,7 +15,7 @@ Answer 5 questions a day on crypto and security basics. Pass the quiz to claim a
 | Folder | Isi / Contents |
 |---|---|
 | `contracts/` | Smart contract badge (Solidity + Foundry) |
-| `app/` | Mini app (Next.js) |
+| `app/` | Web app (Next.js + wagmi) |
 | `content/` | Soal kuis per tanggal (JSON) / Daily quiz questions |
 | `scripts/` | Generator kuis & Grant Radar |
 | `docs/` | Rencana, metrik, catatan / Plan, metrics, notes |
@@ -24,7 +24,7 @@ Answer 5 questions a day on crypto and security basics. Pass the quiz to claim a
 
 - [x] Fase 1 — Persiapan / Setup
 - [x] Fase 2 — Smart contract badge ([Sepolia](docs/deployments.md))
-- [ ] Fase 3 — Mini app
+- [ ] Fase 3 — Web app: **live di https://belajar-onchain.vercel.app** (testnet). Paymaster & Builder Code menyusul
 - [ ] Fase 4 — Mesin konten AI / AI content engine
 - [ ] Fase 5 — Mainnet & peluncuran / Launch
 - [ ] Fase 6 — Grant Radar

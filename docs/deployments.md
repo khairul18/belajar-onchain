@@ -14,6 +14,15 @@
 Badge: 1 = Pemula Onchain, 2 = 7 Hari Beruntun, 3 = 30 Hari Beruntun.
 Metadata sementara di GitHub raw (`app/public/badges/`), bisa dipindah ke domain Vercel lewat `setBadge`.
 
+## Web app (Vercel)
+
+| | |
+|---|---|
+| URL produksi | https://belajar-onchain.vercel.app |
+| Project Vercel | `exssis/belajar-onchain` (root directory `app`, auto-deploy dari GitHub `main`) |
+| Database | Upstash Redis `belajar-onchain-redis` (via Vercel Marketplace) |
+| Jaringan | Base Sepolia |
+
 ## Base Mainnet
 
 Belum. Menunggu konfirmasi pemilik ("lanjut mainnet").
