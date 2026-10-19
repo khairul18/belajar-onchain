@@ -16,3 +16,9 @@ broadcast/
 # Lain-lain
 .DS_Store
 *.log
+.vercel
+
+# Tooling agent (skill lokal dari Vercel/Upstash)
+.agents/
+.claude/
+skills-lock.json
