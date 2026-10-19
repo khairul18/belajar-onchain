@@ -1,0 +1,16 @@
+{
+  "name": "Pemula Onchain — BelajarOnchain",
+  "description": "Lulus kuis harian BelajarOnchain pertama kali. Onchain Beginner: soulbound badge, non-transferable.",
+  "image": "https://raw.githubusercontent.com/khairul18/belajar-onchain/main/app/public/badges/1.svg",
+  "external_url": "https://github.com/khairul18/belajar-onchain",
+  "attributes": [
+    {
+      "trait_type": "Level",
+      "value": "Pemula Onchain"
+    },
+    {
+      "trait_type": "Soulbound",
+      "value": "Yes"
+    }
+  ]
+}

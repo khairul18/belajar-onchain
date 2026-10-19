@@ -1,0 +1,16 @@
+{
+  "name": "7 Hari Beruntun — BelajarOnchain",
+  "description": "Lulus kuis BelajarOnchain 7 hari berturut-turut. 7-Day Streak: soulbound badge, non-transferable.",
+  "image": "https://raw.githubusercontent.com/khairul18/belajar-onchain/main/app/public/badges/2.svg",
+  "external_url": "https://github.com/khairul18/belajar-onchain",
+  "attributes": [
+    {
+      "trait_type": "Level",
+      "value": "7 Hari Beruntun"
+    },
+    {
+      "trait_type": "Soulbound",
+      "value": "Yes"
+    }
+  ]
+}

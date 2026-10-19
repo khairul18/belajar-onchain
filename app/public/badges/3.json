@@ -1,0 +1,16 @@
+{
+  "name": "30 Hari Beruntun — BelajarOnchain",
+  "description": "Lulus kuis BelajarOnchain 30 hari berturut-turut. 30-Day Streak: soulbound badge, non-transferable.",
+  "image": "https://raw.githubusercontent.com/khairul18/belajar-onchain/main/app/public/badges/3.svg",
+  "external_url": "https://github.com/khairul18/belajar-onchain",
+  "attributes": [
+    {
+      "trait_type": "Level",
+      "value": "30 Hari Beruntun"
+    },
+    {
+      "trait_type": "Soulbound",
+      "value": "Yes"
+    }
+  ]
+}
