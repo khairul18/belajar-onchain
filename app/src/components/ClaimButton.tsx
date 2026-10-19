@@ -26,10 +26,13 @@ const DATA_SUFFIX = BUILDER_CODE ? Attribution.toDataSuffix({ codes: [BUILDER_CO
  */
 export function ClaimButton({ claim, onClaimed }: { claim: Claim; onClaimed?: () => void }) {
   const { t, lang } = useLang();
-  const { address, chainId } = useAccount();
+  const { address, chainId, connector } = useAccount();
   const { switchChainAsync } = useSwitchChain();
   const { data: caps } = useCapabilities({ query: { enabled: !!address } });
-  const sponsored = PAYMASTER_ENABLED && !!caps?.[chain.id]?.paymasterService?.supported;
+  // Base Account (Coinbase Smart Wallet) selalu mendukung paymaster; wallet lain dicek lewat EIP-5792.
+  const sponsored =
+    PAYMASTER_ENABLED &&
+    (connector?.id === "baseAccount" || !!caps?.[chain.id]?.paymasterService?.supported);
 
   const calls = useSendCalls();
   const write = useWriteContract();
@@ -42,6 +45,10 @@ export function ClaimButton({ claim, onClaimed }: { claim: Claim; onClaimed?: ()
   const failed =
     calls.isError || write.isError || receipt.data?.status === "reverted" ||
     callsStatus.data?.status === "failure";
+  const err = (calls.error ?? write.error) as { shortMessage?: string; message?: string } | null;
+  const errorDetail =
+    err?.shortMessage ?? err?.message?.split("\n")[0] ??
+    (receipt.data?.status === "reverted" || callsStatus.data?.status === "failure" ? "Transaction reverted" : "");
   const busy =
     calls.isPending || write.isPending || callsStatus.isFetching || receipt.isFetching ||
     (!!calls.data && !callsStatus.data) || (!!write.data && !receipt.data);
@@ -102,7 +109,12 @@ export function ClaimButton({ claim, onClaimed }: { claim: Claim; onClaimed?: ()
       >
         {busy ? t.claiming : `${sponsored ? t.claimFree : t.claim}: ${badge?.name[lang] ?? `#${claim.tokenId}`}`}
       </button>
-      {failed && <p className="text-sm text-red-600">{t.claimError}</p>}
+      {failed && (
+        <p className="text-sm text-red-600">
+          {t.claimError}
+          {errorDetail && <span className="block text-xs opacity-80">{errorDetail}</span>}
+        </p>
+      )}
     </div>
   );
 }
