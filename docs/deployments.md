@@ -22,6 +22,8 @@ Metadata sementara di GitHub raw (`app/public/badges/`), bisa dipindah ke domain
 | Project Vercel | `exssis/belajar-onchain` (root directory `app`, auto-deploy dari GitHub `main`) |
 | Database | Upstash Redis `belajar-onchain-redis` (via Vercel Marketplace) |
 | Jaringan | Base Sepolia |
+| Builder Code | `bc_xnfxjlf7` (ERC-8021, ditempel di setiap tx claim) |
+| Paymaster | CDP Base Paymaster (Sepolia), allowlist `BelajarBadge.claim`, batas global $1. Endpoint hanya di env server `PAYMASTER_URL` |
 
 ## Base Mainnet
 
