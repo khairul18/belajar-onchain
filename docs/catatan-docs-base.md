@@ -44,3 +44,9 @@ Hasil cek docs.base.org. Ada beberapa perbedaan dengan MASTER_PLAN.
 Sumber: docs.base.org/mini-apps/troubleshooting/base-app-compatibility, github.com/coinbase/onchainkit,
 docs.cdp.coinbase.com/paymaster, docs.base.org/specifications/base-transactions,
 docs.base.org/specifications/builder-codes/for-app-developers
+
+## 19 Oktober 2026 — temuan saat uji claim
+- **Base Account / Coinbase Smart Wallet (keys.coinbase.com) menolak Base Sepolia**: "This chain is not supported".
+  Gas-free via paymaster hanya bisa diuji di Base Mainnet. Di testnet, opsi Base Account disembunyikan.
+- **Coinbase Wallet (Blockaid) menandai `belajar-onchain.vercel.app` sebagai berbahaya** (false positive).
+  Perlu lapor ke https://report.blockaid.io/mistake. Sumber: docs.base.org/base-chain/security/avoid-malicious-flags
