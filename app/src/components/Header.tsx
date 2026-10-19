@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useAccount, useConnect, useConnectors, useDisconnect } from "wagmi";
+import { chain } from "@/lib/config";
 import { useLang } from "@/lib/i18n";
 
 /** Nama yang lebih jelas untuk connector bawaan. */
@@ -96,7 +97,12 @@ function ConnectDialog({ onClose }: { onClose: () => void }) {
   const connectors = useConnectors();
   const { connect, isPending } = useConnect({ mutation: { onSuccess: onClose } });
   // Sembunyikan connector "Injected" generik bila wallet sudah terdeteksi lewat EIP-6963.
-  const list = connectors.filter((c) => c.id !== "injected" || connectors.length <= 2);
+  // Base Account (Coinbase Smart Wallet) tidak mendukung Base Sepolia → tampilkan hanya di mainnet.
+  const list = connectors.filter(
+    (c) =>
+      (c.id !== "injected" || connectors.length <= 2) &&
+      !(c.id === "baseAccount" && chain.testnet),
+  );
 
   return (
     <div
