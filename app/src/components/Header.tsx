@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAccount, useConnect, useConnectors, useDisconnect } from "wagmi";
 import { chain } from "@/lib/config";
 import { useLang } from "@/lib/i18n";
@@ -63,9 +63,15 @@ function NavLink({ href, active, children }: { href: string; active: boolean; ch
 
 export function WalletButton({ block = false }: { block?: boolean }) {
   const { t } = useLang();
-  const { address, isConnected } = useAccount();
+  const { address, isConnected, connector } = useAccount();
   const { disconnect } = useDisconnect();
   const [open, setOpen] = useState(false);
+
+  // Sambungan Base Account lama tidak bisa dipakai di testnet → putuskan otomatis.
+  const unsupported = chain.testnet && connector?.id === "baseAccount";
+  useEffect(() => {
+    if (unsupported) disconnect();
+  }, [unsupported, disconnect]);
 
   if (isConnected && address) {
     return (
