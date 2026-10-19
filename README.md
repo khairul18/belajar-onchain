@@ -24,7 +24,7 @@ Answer 5 questions a day on crypto and security basics. Pass the quiz to claim a
 
 - [x] Fase 1 — Persiapan / Setup
 - [x] Fase 2 — Smart contract badge ([Sepolia](docs/deployments.md))
-- [ ] Fase 3 — Web app: **live di https://belajar-onchain.vercel.app** (testnet). Paymaster & Builder Code menyusul
+- [x] Fase 3 — Web app: **live di https://belajar-onchain.vercel.app** (testnet)
 - [ ] Fase 4 — Mesin konten AI / AI content engine
 - [ ] Fase 5 — Mainnet & peluncuran / Launch
 - [ ] Fase 6 — Grant Radar
